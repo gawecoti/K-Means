@@ -9,7 +9,7 @@ import random
 points = [(1,2),(3,5),(5,7),(10,5),(15,7),(20,10),(65,12),(56,15),(4,5)]
 
 # Distance function
-def distance():
+def distance(point1, point2):
     dist = 0
 
 
@@ -18,11 +18,10 @@ def distance():
 
 # K-means function
 def kmeans(points, k):
-    clusters = []
 
     # Find max and min in each dimension
     maximum = [0 for i in range(len(points[0]))]
-    minimum = [0 for i in range(len(points[0]))]
+    minimum = [100 for i in range(len(points[0]))]
 
     for p in points:
         pos = 0
@@ -48,7 +47,16 @@ def kmeans(points, k):
 
     print centroids
 
+    clusters = [(1000000,'Cluster 1') for i in range(len(points))]
+    pos = 0
     # Assign each point to closest centroid
+    for p in points:
+        for c in centroids:
+            dist = distance(p, c)
+
+            if dist < clusters[pos][0]:
+                clusters[pos] = (dist, ) #add cluster number?
+
 
     # Compute new average of points assigned to cluster k
 
