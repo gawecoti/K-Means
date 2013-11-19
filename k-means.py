@@ -21,20 +21,32 @@ def kmeans(points, k):
     clusters = []
 
     # Find max and min in each dimension
+    maximum = [0 for i in range(len(points[0]))]
+    minimum = [0 for i in range(len(points[0]))]
+
     for p in points:
-        
+        pos = 0
+        for dim in p:
+            if dim > maximum[pos]:
+                maximum[pos] = dim
+            if dim < minimum[pos]:
+                minimum[pos] = dim
+            pos += 1
 
-
-        print
-
-
+    print maximum
+    print minimum
 
     # Randomly assign k cluster centroids
+    centroids = []
+    centroid = ()
     for i in range(k):
+        for j in range(len(maximum)):
+            number = random.random() * (maximum[j] - minimum[j]) + minimum[j]
+            centroid += (number,)
+        centroids.append(centroid)
+        centroid = ()
 
-
-
-        print
+    print centroids
 
     # Assign each point to closest centroid
 
@@ -45,4 +57,4 @@ def kmeans(points, k):
 
 
 if __name__ == '__main__':
-    print
+    print kmeans(points,2)
