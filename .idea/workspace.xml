@@ -4,7 +4,7 @@
     <list default="true" id="266d85c1-f210-463e-8f32-c0cc6e2e3f3f" name="Default" comment="" />
     <ignored path="k-means.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/k-means.py" changelist="266d85c1-f210-463e-8f32-c0cc6e2e3f3f" time="1385006114251" ignored="false" />
+    <file path="/k-means.py" changelist="266d85c1-f210-463e-8f32-c0cc6e2e3f3f" time="1385006554816" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +27,7 @@
       <file leaf-file-name="k-means.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/k-means.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="8" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.83253586">
+            <state line="79" column="0" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.80861247">
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -239,7 +239,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/k-means.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="8" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.83253586">
+        <state line="79" column="0" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.80861247">
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

@@ -69,12 +69,14 @@ def kmeans(points, k):
         for p in cluster:
             points_in_cluster.append(p[0])
 
-        
+        dim_points = []
+        for dim in points[0]:
+            for points in points_in_cluster:
+                dim_points.append(points[dim])
 
-        np.average(points_in_cluster)
+            np.average(dim_points)
 
-
-
+        points_in_cluster = []
 
     return clusters
 
