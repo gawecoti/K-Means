@@ -13,6 +13,8 @@ points = [(1,2),(3,5),(5,7),(10,5),(15,7),(20,10),(65,12),(56,15),(4,5)]
 def distance(point1, point2):
     dist = 0
 
+    
+
 
 
     return dist
@@ -65,6 +67,7 @@ def kmeans(points, k):
 
     # Compute new average of points assigned to cluster k, change centroids
     points_in_cluster = []
+    new_centroids = []
     for cluster in clusters:
         for p in cluster:
             points_in_cluster.append(p[0])
