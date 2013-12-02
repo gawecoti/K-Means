@@ -9,13 +9,13 @@ import numpy as np
 # Example data
 points = [(1,2),(3,5),(5,7),(10,5),(15,7),(20,10),(65,12),(56,15),(4,5)]
 
-# Distance function
+# Distance function (Eucledian distance)
 def distance(point1, point2):
     dist = 0
+    dim = len(point1)
 
-    
-
-
+    for d in range(dim):
+        dist += (point2[d] - point1[d]) ** 2
 
     return dist
 
@@ -82,7 +82,6 @@ def kmeans(points, k):
         points_in_cluster = []
 
     return clusters
-
 
 if __name__ == '__main__':
     print kmeans(points,2)
